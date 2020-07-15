@@ -1,20 +1,22 @@
 pub fn square_of_sum(n: u32) -> u32 {
-let mut sqsum = 0;
+    let mut num=0;
     for i in 1..=n{
-        sqsum += i.pow(2);
+    	num=num+i;
     }
-    return sqsum;
+    let a= num*num;
+    a
 }
 
 pub fn sum_of_squares(n: u32) -> u32 {
-let mut sqsum = 0;
+    let mut num=0;
     for i in 1..=n{
-        sqsum += (i*i);
+    	num= num+(i*i);
     }
-        return sqsum;
+    num
 }
 
 pub fn difference(n: u32) -> u32 {
-        return square_of_sum(n) - sum_of_squares(n);
+
+    square_of_sum(n)-	sum_of_squares(n)
 
 }
